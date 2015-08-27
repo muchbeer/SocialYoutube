@@ -32,6 +32,8 @@ public class MainActivity extends ActionBarActivity {
 
 
     private Handler handler;
+    private String lowassa = "lowassa";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +45,8 @@ public class MainActivity extends ActionBarActivity {
         handler = new Handler();
         addClickListener();
 
+        searchOnYoutube(lowassa);
+        /*
         searchInput.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -53,7 +57,7 @@ public class MainActivity extends ActionBarActivity {
                 return true;
             }
         });
-
+*/
     }
 
     private void searchOnYoutube(final String keywords){
